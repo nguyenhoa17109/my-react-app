@@ -4,6 +4,8 @@ import HomePage from "./HomePage";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import ConfirmedBooking from "./ConfirmedBooking";
 import About from "./About";
+import OrderOnline from "./Order";
+import Menu from "./Menu";
 
 export default function Main() {
   /* global fetchAPI */
@@ -33,6 +35,8 @@ export default function Main() {
          <Route path="/" element={<HomePage />}></Route>
          <Route path="/booking-confirm" element={<ConfirmedBooking />}></Route>
          <Route path="/about" element={<About />}></Route>
+         <Route path="/order" element={<OrderOnline />}></Route>
+         <Route path="/menu" element={<Menu />}></Route>
         <Route
           path="/booking"
           element={

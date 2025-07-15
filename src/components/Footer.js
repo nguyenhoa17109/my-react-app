@@ -11,15 +11,15 @@ export default function Footer() {
       url: "/about",
     },
     {
-      name: "CustomersSay",
-      url: "",
+      name: "Order",
+      url: "/order",
     },
     {
-      name: "Chicago",
-      url: "",
+      name: "Menu",
+      url: "/menu",
     },
     {
-      name: "BookingPage",
+      name: "Booking Page",
       url: "/booking",
     },
   ];

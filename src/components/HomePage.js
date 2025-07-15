@@ -18,6 +18,7 @@ import {
 } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { MdDeliveryDining } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   const listSpecials = [
@@ -65,6 +66,10 @@ export default function HomePage() {
       text: "Really good!",
     },
   ];
+  const navigate = useNavigate();
+  const onOrder = () => {
+    navigate("/order");
+  };
   return (
     <>
       <Box backgroundColor="#495e57">
@@ -108,6 +113,7 @@ export default function HomePage() {
               width={"fit-content"}
               backgroundColor="#facc3d"
               borderRadius={16}
+              onClick={onOrder}
             >
               Reserve a Table
             </Button>
@@ -139,6 +145,7 @@ export default function HomePage() {
             width={"fit-content"}
             backgroundColor="#facc3d"
             borderRadius={10}
+            onClick={navigate("/menu")}
           >
             Online Menu
           </Button>
@@ -186,7 +193,7 @@ export default function HomePage() {
                   </Text>
                 </CardBody>
                 <CardFooter gap={2} style={{ margin: "10px" }}>
-                  <Button variant="ghost">
+                  <Button variant="ghost" onClick={onOrder}>
                     Order a delivery
                     <MdDeliveryDining />
                   </Button>
@@ -270,7 +277,11 @@ export default function HomePage() {
               officia consequat duis enim velit mollit.
             </p>
           </Box>
-          <Box width={"50%"} position={"relative"} style={{display: "flex", justifyContent: "flex-end"}}>
+          <Box
+            width={"50%"}
+            position={"relative"}
+            style={{ display: "flex", justifyContent: "flex-end" }}
+          >
             <Image
               src="../images/restaurant.jpg"
               fit="cover"
