@@ -6,8 +6,8 @@ export default function Header() {
       url: "/",
     },
     {
-      name: "Specials",
-      url: "",
+      name: "About",
+      url: "/about",
     },
     {
       name: "CustomersSay",

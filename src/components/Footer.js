@@ -7,8 +7,8 @@ export default function Footer() {
       url: "/",
     },
     {
-      name: "Specials",
-      url: "",
+      name: "About",
+      url: "/about",
     },
     {
       name: "CustomersSay",

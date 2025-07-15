@@ -3,6 +3,7 @@ import BookingPage from "./BookingPage";
 import HomePage from "./HomePage";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import ConfirmedBooking from "./ConfirmedBooking";
+import About from "./About";
 
 export default function Main() {
   /* global fetchAPI */
@@ -31,6 +32,7 @@ export default function Main() {
       <Routes>
          <Route path="/" element={<HomePage />}></Route>
          <Route path="/booking-confirm" element={<ConfirmedBooking />}></Route>
+         <Route path="/about" element={<About />}></Route>
         <Route
           path="/booking"
           element={
